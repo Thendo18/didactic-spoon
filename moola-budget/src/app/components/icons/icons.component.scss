@@ -1,0 +1,55 @@
+@import '~mdb-ui-kit/css/mdb.min.css';
+body {
+    background: url(http://habrastorage.org/files/c9c/191/f22/c9c191f226c643eabcce6debfe76049d.jpg);
+}
+.container .glyphicon-list-alt {
+    font-size: 10rem;
+    margin-top: 3rem;
+    color: #FF2802;
+}
+input {
+    width: 100%;
+    margin-bottom: 1.4rem;
+    padding: 1rem;
+    background-color: #ECF2F4;
+    border-radius: 0.2rem;
+    border: none;
+}
+h2 {
+    margin-bottom: 3rem;
+    font-weight: bold;
+    color: #ABABAB;
+}
+.btn {
+    border-radius: 0.2rem;
+}
+.btn .glyphicon {
+    font-size: 3rem;
+    color: #fff;
+}
+.full-width {
+    background-color: #8EB5E2;
+    width: 100%;
+    -webkit-border-top-right-radius: 0;
+    -webkit-border-bottom-right-radius: 0;
+    -moz-border-radius-topright: 0;
+    -moz-border-radius-bottomright: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.bi-wallet{
+    font-size: 10rem;
+    margin-top: 3rem;
+    color: #FF2802;
+}
+.bi-chat-right-quote{
+    font-size: 10rem;
+    margin-top: 3rem;
+    color: #FF2802;
+}
+
+.bi-journals{
+    font-size: 10rem;
+    margin-top: 3rem;
+    color: #FF2802;
+}
