@@ -12,8 +12,7 @@ import { SavingsPageComponent } from './pages/savings-page/savings-page.componen
 const routes: Routes = [ 
   {path:'', redirectTo: 'home', pathMatch: 'full'},
   {path:'home', component: HomePageComponent, pathMatch: 'full'},
-  {path: 'icons', component:IconsComponent,pathMatch: 'full'},
-  {path: '#', component:BudgetPageComponent,pathMatch: 'full'},
+  {path: 'budget', component:BudgetPageComponent,pathMatch: 'full'},
   {path: 'diary', component:DiaryPageComponent,pathMatch: 'full'},
   {path: 'quotes', component:QuotesPageComponent,pathMatch: 'full'},
   {path: 'savings', component:SavingsPageComponent,pathMatch: 'full'},
