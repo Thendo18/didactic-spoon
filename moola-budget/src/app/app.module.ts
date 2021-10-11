@@ -10,6 +10,7 @@ import { SavingsPageComponent } from './pages/savings-page/savings-page.componen
 import { BudgetPageComponent } from './pages/budget-page/budget-page.component';
 import { DiaryPageComponent } from './pages/diary-page/diary-page.component';
 import { QuotesPageComponent } from './pages/quotes-page/quotes-page.component';
+import { IconsComponent } from './components/icons/icons.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { QuotesPageComponent } from './pages/quotes-page/quotes-page.component';
     SavingsPageComponent,
     BudgetPageComponent,
     DiaryPageComponent,
-    QuotesPageComponent
+    QuotesPageComponent,
+    IconsComponent
   ],
   imports: [
     BrowserModule,

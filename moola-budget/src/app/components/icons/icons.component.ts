@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-budget-plan',
-  templateUrl: './budget-plan.component.html',
-  styleUrls: ['./budget-plan.component.scss']
+  selector: 'app-icons',
+  templateUrl: './icons.component.html',
+  styleUrls: ['./icons.component.scss']
 })
-export class BudgetPlanComponent implements OnInit {
+export class IconsComponent implements OnInit {
 
   constructor() { }
 
