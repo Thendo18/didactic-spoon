@@ -16,6 +16,7 @@ const routes: Routes = [
   {path: 'diary', component:DiaryPageComponent,pathMatch: 'full'},
   {path: 'quotes', component:QuotesPageComponent,pathMatch: 'full'},
   {path: 'savings', component:SavingsPageComponent,pathMatch: 'full'},
+  {path: 'wallet', component:SavingsPageComponent,pathMatch: 'full'},
   {path:'**', redirectTo: '', pathMatch: 'full'}
   
 ];
