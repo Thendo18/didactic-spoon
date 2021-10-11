@@ -10,6 +10,9 @@ export class DiaryPageComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
+
+    
   }
 
 }
