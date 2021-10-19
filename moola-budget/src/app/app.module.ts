@@ -10,6 +10,8 @@ import { BudgetPageComponent } from './pages/budget-page/budget-page.component';
 import { DiaryPageComponent } from './pages/diary-page/diary-page.component';
 import { QuotesPageComponent } from './pages/quotes-page/quotes-page.component';
 import { IconsComponent } from './components/icons/icons.component';
+import { LoginPageComponent } from './pages/login-page/login-page.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { IconsComponent } from './components/icons/icons.component';
     BudgetPageComponent,
     DiaryPageComponent,
     QuotesPageComponent,
-    IconsComponent
+    IconsComponent,
+    LoginPageComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
