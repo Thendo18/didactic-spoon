@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { IconsComponent } from './components/icons/icons.component';
 
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { RegisterComponent } from './components/register/register.component';
 import { BudgetPageComponent } from './pages/budget-page/budget-page.component';
 import { DiaryPageComponent } from './pages/diary-page/diary-page.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path: 'diary', component:DiaryPageComponent,pathMatch: 'full'},
   {path: 'quotes', component:QuotesPageComponent,pathMatch: 'full'},
   {path: 'savings', component:SavingsPageComponent,pathMatch: 'full'},
+  {path: 'register', component:RegisterComponent,pathMatch: 'full'},
   {path: 'wallet', component:SavingsPageComponent,pathMatch: 'full'},
   {path:'**', redirectTo: '', pathMatch: 'full'}
   

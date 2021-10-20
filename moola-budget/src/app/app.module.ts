@@ -12,6 +12,7 @@ import { QuotesPageComponent } from './pages/quotes-page/quotes-page.component';
 import { IconsComponent } from './components/icons/icons.component';
 import { LoginPageComponent } from './pages/login-page/login-page.component';
 import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { LoginComponent } from './components/login/login.component';
     QuotesPageComponent,
     IconsComponent,
     LoginPageComponent,
-    LoginComponent
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
