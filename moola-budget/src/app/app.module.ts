@@ -13,6 +13,8 @@ import { IconsComponent } from './components/icons/icons.component';
 import { LoginPageComponent } from './pages/login-page/login-page.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
+import { AddBudgetPlanComponent } from './components/add-budget-plan/add-budget-plan.component';
+import { PlanABudgetComponent } from './components/plan-a-budget/plan-a-budget.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { RegisterComponent } from './components/register/register.component';
     IconsComponent,
     LoginPageComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    AddBudgetPlanComponent,
+    PlanABudgetComponent
   ],
   imports: [
     BrowserModule,
