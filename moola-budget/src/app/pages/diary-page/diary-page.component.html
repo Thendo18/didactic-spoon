@@ -1,45 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-  <!-- Bootstrap CSS -->
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
-    crossorigin="anonymous"
-  />
+<md-toolbar color="primary">
+  <span>NgDiary</span>
+  <span class="spacer"></span>
+  <span><i>A personal diary</i></span>
+</md-toolbar>
 
-  <body>
-    <div class="container my-4">
-      <h1 class="text-center">Your Diary</h1>
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Write a story</h5>
-          <p class="card-text">Your secrets are safe with me.</p>
-          <div class="mb-3">
-            <textarea class="form-control" id="addTxt" rows="3"></textarea>
-          </div>
-          <a href="#" class="btn btn-primary" id="addBtn">Add Story</a>
-        </div>
-      </div>
-      <hr />
-      <h2>Your stories</h2>
-      <hr />
-      <div id="stories" class="row container-fluid"></div>
-    </div>
+<md-card>
+  <md-card-title>New diary entry</md-card-title>
+  <md-card-content>
+    <md-input-container>
+      <input #inputText type="text" mdInput placeholder="Title"
+        maxlength="30" [(ngModel)]="newPost.title">
+      <md-hint align="end">{{inputText.value.length}} / 30</md-hint>
+    </md-input-container>
+    <p>
+      <md-input-container>
+        <textarea #textArea mdInput name="textarea" rows="10" cols="50" 
+          placeholder="Write something here"
+          [(ngModel)]="newPost.body"></textarea>
+      </md-input-container>
+    </p>
+  </md-card-content>
+  <md-card-actions>
+    <button md-icon-button mdTooltip="Add post" (click)="addPost()"><md-icon>check</md-icon></button>
+  </md-card-actions>
+</md-card>
 
-    <!-- Optional JavaScript; choose one of the two! -->
+<md-card *ngFor="let post of posts">
+  <md-card-subtitle>{{post.creationTime | date:'medium'}}</md-card-subtitle>
+  <md-card-title>{{post.title}}</md-card-title>
+  <md-card-content>{{post.body}}</md-card-content>
+  <md-card-actions>
+    <button md-icon-button mdTooltip="Edit post"><md-icon>create</md-icon></button>
+    <button md-icon-button mdTooltip="Remove post" (click)="removePost(post)"><md-icon>delete</md-icon></button>
+    <button md-icon-button mdTooltip="I like it!"><md-icon>thumb_up</md-icon></button>
+    <button md-icon-button mdTooltip="Argh!"><md-icon>thumb_down</md-icon></button>
+  </md-card-actions>
+</md-card>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/app.js"></script>
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
-    -->
-  </body>
-</html>
