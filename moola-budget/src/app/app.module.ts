@@ -15,6 +15,7 @@ import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { AddBudgetPlanComponent } from './components/add-budget-plan/add-budget-plan.component';
 import { PlanABudgetComponent } from './components/plan-a-budget/plan-a-budget.component';
+import { DiaryComponent } from './components/diary/diary.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { PlanABudgetComponent } from './components/plan-a-budget/plan-a-budget.c
     LoginComponent,
     RegisterComponent,
     AddBudgetPlanComponent,
-    PlanABudgetComponent
+    PlanABudgetComponent,
+    DiaryComponent
   ],
   imports: [
     BrowserModule,
