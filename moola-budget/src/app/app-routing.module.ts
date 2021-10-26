@@ -23,7 +23,6 @@ const routes: Routes = [
   {path: 'savings', component:SavingsPageComponent,pathMatch: 'full'},
   {path: 'add', component:AddBudgetPlanComponent,pathMatch: 'full'},
   {path: 'plan', component:PlanABudgetComponent,pathMatch: 'full'},
-
   {path: 'register', component:RegisterComponent,pathMatch: 'full'},
   {path: 'wallet', component:SavingsPageComponent,pathMatch: 'full'},
   {path:'**', redirectTo: '', pathMatch: 'full'}
