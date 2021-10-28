@@ -3,11 +3,12 @@ import { CreateBudgetDto } from './dto/create-budget.dto';
 import { BudgetService } from './budget.service';
 import { budget } from './interfaces/budget.interface';
 @Controller('budget')
+
 export class BudgetController {
-co
+    constructor (private readonly  budgetService: BudgetService) {}
     @Get()
-    findAll(): string{
-        return 'get budget';
+    findAll(): budget[]{
+        return this.budgetService.findAll();
     }
 
     @Post()
