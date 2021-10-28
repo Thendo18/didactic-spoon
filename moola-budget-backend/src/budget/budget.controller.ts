@@ -11,6 +11,11 @@ export class BudgetController {
         return this.budgetService.findAll();
     }
 
+@Get(':id')
+findOne(@Param('id') id): budget{
+    return this.budgetService.findOne(id);
+}
+
     @Post()
     create(@Body()createBudgetDto: CreateBudgetDto): string{
       return `Name: ${createBudgetDto.name} Period: ${createBudgetDto.period} Amount: ${createBudgetDto.amount}`; 

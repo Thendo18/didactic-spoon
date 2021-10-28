@@ -21,5 +21,7 @@ private readonly budget: budget[] = [
      findAll(): budget[]{
          return this.budget;
      }
-        
+    findOne(id: string): budget{
+        return this.budget.find(budget => budget.id=== id);
+    }    
 }
