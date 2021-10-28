@@ -10,7 +10,16 @@ private readonly budget: budget[] = [
     name: "fixed investment",
     "amount":10000,
     period:"1 year"
+},
+{
+    id: "456767668",
+    name: "fixed investment",
+    "amount":5000,
+    period:"2 year"
 }
-     ] 
+     ] ;
+     findAll(): budget[]{
+         return this.budget;
+     }
         
 }
