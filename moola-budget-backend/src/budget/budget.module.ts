@@ -4,9 +4,11 @@ import { BudgetService } from './budget.service';
 import { MongooseModule } from '@nestjs/mongoose';
 import { BudgetSchema } from './schemas/budget.schema';
 
-@Module({
-  imports: [MongooseModule.forFeature([{name: 'budget', schema: BudgetSchema }])],
-  controllers: [BudgetController, BudgetController],
-  providers: [BudgetService, BudgetService],
-})
-export class AppModule {}
+@Module({ imports: [
+    MongooseModule.forFeature([{ name: 'budget', schema: BudgetSchema }]),
+  ],
+  controllers: [BudgetController],
+  providers: [BudgetService],})
+export class BudgetModule {}
+
+

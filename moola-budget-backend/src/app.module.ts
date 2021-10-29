@@ -1,15 +1,12 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { BudgetController } from './budget/budget.controller';
-import { BudgetService } from './budget/budget.service';
 import { MongooseModule } from '@nestjs/mongoose';
-import { BudgetSchema } from './budget/schemas/budget.schema';
-
+import { BudgetModule } from './budget/budget.module';
 
 @Module({
-  imports: [MongooseModule.forRoot('mongodb+srv://Thendo:24681012@cluster0.5rkio.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')],
-  controllers: [AppController, BudgetController],
-  providers: [AppService, BudgetService],
+  imports: [ BudgetModule, MongooseModule.forRoot('mongodb+srv://Thendo:24681012@cluster0.5rkio.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'), BudgetModule, ],
+  controllers: [AppController],
+  providers: [AppService],
 })
 export class AppModule {}
