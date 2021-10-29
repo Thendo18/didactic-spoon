@@ -4,6 +4,7 @@ import { AppService } from './app.service';
 import { BudgetController } from './budget/budget.controller';
 import { BudgetService } from './budget/budget.service';
 import { MongooseModule } from '@nestjs/mongoose';
+import { BudgetSchema } from './budget/schemas/budget.schema';
 
 
 @Module({
