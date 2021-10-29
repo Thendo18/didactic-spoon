@@ -16,7 +16,7 @@ import { RegisterComponent } from './components/register/register.component';
 import { AddBudgetPlanComponent } from './components/add-budget-plan/add-budget-plan.component';
 import { PlanABudgetComponent } from './components/plan-a-budget/plan-a-budget.component';
 import { DiaryComponent } from './components/diary/diary.component';
-
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +35,7 @@ import { DiaryComponent } from './components/diary/diary.component';
     DiaryComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule,   HttpClientModule,
     AppRoutingModule
   ],
   providers: [],

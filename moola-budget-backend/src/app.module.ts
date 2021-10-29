@@ -5,7 +5,7 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { BudgetModule } from './budget/budget.module';
 
 @Module({
-  imports: [ BudgetModule, MongooseModule.forRoot('mongodb+srv://Thendo:24681012@cluster0.5rkio.mongodb.net/moola-budget?retryWrites=true&w=majority'), BudgetModule, ],
+  imports: [ BudgetModule, MongooseModule.forRoot('mongodb+srv://Thendo:24681012@cluster0.5rkio.mongodb.net/moola-budget')],
   controllers: [AppController],
   providers: [AppService],
 })

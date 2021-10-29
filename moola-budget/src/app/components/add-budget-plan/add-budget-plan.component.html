@@ -1,6 +1,9 @@
 <div class="container">
   <h2>Budget plan</h2>
   <form>
+    <div *ngFor=" let det of details">
+<h1>{{det.name}}</h1>
+    </div>
     <div class="row">
       <input type="text" class="form-control" placeholder="Budget type" />
     </div>

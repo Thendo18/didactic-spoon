@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BudgetService } from 'src/app/services/budget.service';
 
 @Component({
   selector: 'app-add-budget-plan',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddBudgetPlanComponent implements OnInit {
 
-  constructor() { }
+  details:any;
+  constructor(private budgetService:BudgetService) { }
 
   ngOnInit(): void {
+    this.budgetService.getData().subscribe((req)=>
+    {
+this.details=req;
+
+
+    })
   }
 
 }
