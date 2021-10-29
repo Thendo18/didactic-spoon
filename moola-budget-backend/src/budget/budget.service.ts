@@ -21,4 +21,11 @@ export class BudgetService {
         return await newBudget.save();
     }
 
+    async delete(id: string): Promise<Budget>{
+     return await this.budgetModel.findByIdAndRemove(id);
+     }
+
+     async update(id: string, budget: Budget): Promise<Budget>{
+          return await this.budgetModel.findByIdAndUpdate(id, budget, { new: true });
+     }
 }
