@@ -1,27 +1,18 @@
 import { Injectable } from '@nestjs/common';
 import { budget } from './interfaces/budget.interface';
-
+import { Model, model } from 'mongoose';
+import { InjectModel } from '@nestjs/mongoose';
 @Injectable()
 export class BudgetService {
- 
-private readonly budget: budget[] = [
-{
-    id: "343434563",
-    name: "fixed investment",
-    "amount":10000,
-    period:"1 year"
-},
-{
-    id: "456767668",
-    name: "fixed investment",
-    "amount":5000,
-    period:"2 year"
-}
-     ] ;
-     findAll(): budget[]{
-         return this.budget;
+ constructor(@InjectModel ('budget') private readonly budgetModel: Model<budget>){}
+
+
+     async findAll(): Promise<budget[]>{
+         return await  this.budgetModel.find();
      }
-    findOne(id: string): budget{
-        return this.budget.find(budget => budget.id=== id);
-    }    
+
+
+    async  findOne(id: string): Promise <budget>{
+        return await this.budgetModel.findOne({_id: id});
+    }      
 }
