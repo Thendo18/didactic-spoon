@@ -9,17 +9,17 @@ import {
 } from '@nestjs/common';
 import { CreateBudgetDto } from './dto/create-budget.dto';
 import { BudgetService } from './budget.service';
-import { budget } from './interfaces/budget.interface';
+import { Budget } from './interfaces/budget.interface';
 @Controller('budget')
 export class BudgetController {
   constructor(private readonly budgetService: BudgetService) {}
   @Get()
-  async findAll(): Promise<budget[]> {
+  async findAll(): Promise<Budget[]> {
     return this.budgetService.findAll();
   }
 
   @Get(':id')
-  async findOne(@Param('id') id): Promise<budget> {
+  async findOne(@Param('id') id): Promise<Budget> {
     return this.budgetService.findOne(id);
   }
 

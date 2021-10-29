@@ -1,4 +1,4 @@
-export interface budget{
+export interface Budget{
     id?: string;
     name: string;
     period: string;
