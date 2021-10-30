@@ -17,6 +17,7 @@ import { AddBudgetPlanComponent } from './components/add-budget-plan/add-budget-
 import { PlanABudgetComponent } from './components/plan-a-budget/plan-a-budget.component';
 import { DiaryComponent } from './components/diary/diary.component';
 import { HttpClientModule } from '@angular/common/http';
+import { SavingsComponent } from './components/savings/savings.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +33,8 @@ import { HttpClientModule } from '@angular/common/http';
     RegisterComponent,
     AddBudgetPlanComponent,
     PlanABudgetComponent,
-    DiaryComponent
+    DiaryComponent,
+    SavingsComponent
   ],
   imports: [
     BrowserModule,   HttpClientModule,
