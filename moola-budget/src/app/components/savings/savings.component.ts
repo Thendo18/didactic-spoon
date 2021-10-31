@@ -8,10 +8,17 @@ import { BudgetService } from 'src/app/services/budget.service';
 })
 export class SavingsComponent implements OnInit {
 
+ 
   details:any;
   constructor(private budgetService:BudgetService) { }
 
   ngOnInit(): void {
+    this.budgetService.getData().subscribe((req)=>
+    {
+this.details=req;
+
+
+    })
   }
 
 }
