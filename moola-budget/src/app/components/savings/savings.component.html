@@ -1,6 +1,6 @@
 <h2>Budget history</h2>
 <br />
-<table class="table table-sm table-dark">
+<table class="table table-sm table-dark"  >
   <thead>
     <tr>
       <th scope="col">#</th>
@@ -9,22 +9,13 @@
       <th scope="col">Amount saved</th>
     </tr>
   </thead>
-  <tbody>
+  <tbody *ngFor=" let det of details;let i = index">
     <tr>
-      <th scope="row">1</th>
-      <td> <div *ngFor=" let det of details">
-        <h1>{{det.name}}</h1>
-            </div></td>
-      <td>...</td>
-      <td>...</td>
+      <th scope="row">{{i+1}}</th>
+      <td>{{det.name}} </td>
+      <td>{{det.period}}</td>
+      <td>{{det.amount}}</td>
    
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>***</td>
-      <td>***</td>
-      <td>****</td>
- 
     </tr>
   </tbody>
 </table>
