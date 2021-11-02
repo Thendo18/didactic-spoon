@@ -10,10 +10,10 @@
     >
       Dropdown button
     </button>
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" data-toggle="collapse" href="#collapseExample" aria-expanded="false"  role="button" aria-controls="collapseExample">
-      <a class="dropdown-item" href="/add">Add budget plan</a>
-      <a class="dropdown-item" href="/plan">Plan a budget</a>
-      <a class="dropdown-item" href="/savings">Budget history</a>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" >
+      <a class="dropdown-item" aria-labelledby="dropdownMenuButton" data-toggle="collapse" href="#collapseExample" aria-expanded="false"  role="button" aria-controls="collapseExample">Add budget plan</a>
+      <a class="dropdown-item" aria-labelledby="dropdownMenuButton" data-toggle="collapse" href="#collapseExample2" aria-expanded="false"  role="button" aria-controls="collapseExample">Plan a budget</a>
+      <a class="dropdown-item" aria-labelledby="dropdownMenuButton" data-toggle="collapse" href="#collapseExample3" aria-expanded="false"  role="button" aria-controls="collapseExample">Budget history</a>
     </div>
   </div>
 </div>
@@ -23,3 +23,18 @@
 <app-add-budget-plan></app-add-budget-plan>
   </div>
 </div>
+
+<div class="collapse" id="collapseExample2">
+  <div class="card card-body">
+<app-plan-a-budget></app-plan-a-budget>
+  </div>
+</div>
+
+
+
+<div class="collapse" id="collapseExample3">
+  <div class="card card-body">
+<app-savings></app-savings>
+  </div>
+</div>
+
