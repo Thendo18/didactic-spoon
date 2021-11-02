@@ -10,10 +10,16 @@
     >
       Dropdown button
     </button>
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" data-toggle="collapse" href="#collapseExample" aria-expanded="false"  role="button" aria-controls="collapseExample">
       <a class="dropdown-item" href="/add">Add budget plan</a>
       <a class="dropdown-item" href="/plan">Plan a budget</a>
       <a class="dropdown-item" href="/savings">Budget history</a>
     </div>
+  </div>
+</div>
+
+<div class="collapse" id="collapseExample">
+  <div class="card card-body">
+<app-add-budget-plan></app-add-budget-plan>
   </div>
 </div>
