@@ -5,7 +5,7 @@ body {
 .container .glyphicon-list-alt {
     font-size: 10rem;
     margin-top: 3rem;
-    color: #FF2802;
+    color: orangered;
 }
 input {
     width: 100%;
@@ -40,12 +40,12 @@ h2 {
 .bi-wallet{
     font-size: 10rem;
     margin-top: 3rem;
-    color: #FF2802;
+    color: orangered;
 }
 .bi-chat-right-quote{
     font-size: 10rem;
     margin-top: 3rem;
-    color: #FF2802;
+    color: white;
 }
 
 .card .card-body{
@@ -60,9 +60,11 @@ h2 {
         margin-top: 1em;
         height: 120px;
         width: 120px;
-        color: #FF2802;
+        color: black;
     }
 }
 
 
-
+.card{
+    background-color: white;
+}
