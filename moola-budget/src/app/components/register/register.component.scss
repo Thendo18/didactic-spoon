@@ -1,10 +1,13 @@
 	/* Coded with love by Mutiullah Samim */
-    body,
+
     html {
         margin: 0;
         padding: 0;
         height: 100%;
-        background: white !important;
+        background-image: linear-gradient( -90deg,rgb(75, 31, 75),rgb(13, 86, 182));
+    }
+    body{
+        background-image: linear-gradient( -90deg,rgb(75, 31, 75),rgb(13, 86, 182));
     }
     .user_card {
         height: 500px;
@@ -67,4 +70,9 @@
     }
     .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
         background-color: green!important;
+    }
+
+    .container{
+        background-image: linear-gradient( -90deg,rgb(75, 31, 75),rgb(13, 86, 182));
+        height: 100%;
     }
