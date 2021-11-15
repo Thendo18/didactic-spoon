@@ -1,6 +1,4 @@
-<button class="btn btn-primary " type="button"  routerLink="/home"  >
- 
-  back</button>
+<button class="btn btn-primary" type="button" routerLink="/home">back</button>
 
 <div class="container">
   <div class="dropdown">
@@ -9,36 +7,84 @@
       type="button"
       id="dropdownMenuButton"
       data-toggle="dropdown"
-      aria-haspopup="true"
+      aria-haspopup="false"
       aria-expanded="false"
     >
       Dropdown button
     </button>
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" >
-      <a class="dropdown-item" aria-labelledby="dropdownMenuButton" data-toggle="collapse" href="#collapseExample" aria-expanded="false"  role="button" aria-controls="collapseExample">Add budget plan</a>
-      <a class="dropdown-item" aria-labelledby="dropdownMenuButton" data-toggle="collapse" href="#collapseExample2" aria-expanded="false"  role="button" aria-controls="collapseExample">Plan a budget</a>
-      <a class="dropdown-item" aria-labelledby="dropdownMenuButton" data-toggle="collapse" href="#collapseExample3" aria-expanded="false"  role="button" aria-controls="collapseExample">Budget history</a>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a
+        class="dropdown-item"
+        aria-labelledby="dropdownMenuButton"
+        data-toggle="collapse"
+        href="#collapseExample"
+        aria-expanded="false"
+        role="button"
+        aria-controls="collapseExample"
+        >Add budget plan</a
+      >
+      <a
+        class="dropdown-item"
+        aria-labelledby="dropdownMenuButton"
+        data-toggle="collapse"
+        href="#collapseExample2"
+        aria-expanded="false"
+        role="button"
+        aria-controls="collapseExample"
+        >Plan a budget</a
+      >
+      <a
+        class="dropdown-item"
+        aria-labelledby="dropdownMenuButton"
+        data-toggle="collapse"
+        href="#collapseExample3"
+        aria-expanded="false"
+        role="button"
+        aria-controls="collapseExample"
+        >Budget history</a
+      >
     </div>
   </div>
 </div>
 
+<button
+  type="button"
+  class="btn btn-secondary btn-lg btn-block"
+  data-toggle="collapse"
+  href="#collapseExample"
+  aria-expanded="false"
+  role="button"
+  aria-controls="collapseExample"
+>
+  Add budget plan
+</button>
+
 <div class="collapse" id="collapseExample">
   <div class="card card-body">
-<app-add-budget-plan></app-add-budget-plan>
+    <br />
+    <br />
+    <br />
 
-</div>
+    <app-add-budget-plan></app-add-budget-plan>
+  </div>
 
-<div class="collapse" id="collapseExample2">
-  <div class="card card-body">
-<app-plan-a-budget></app-plan-a-budget>
+  <div class="collapse" id="collapseExample2">
+    <div class="card card-body">
+      <br />
+      <br />
+      <br />
+
+      <app-plan-a-budget></app-plan-a-budget>
+    </div>
+  </div>
+
+  <div class="collapse" id="collapseExample3">
+    <div class="card card-body">
+      <br />
+      <br />
+      <br />
+
+      <app-savings></app-savings>
+    </div>
   </div>
 </div>
-
-
-
-<div class="collapse" id="collapseExample3">
-  <div class="card card-body">
-<app-savings></app-savings>
-  </div>
-</div>
-
