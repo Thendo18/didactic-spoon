@@ -9,9 +9,7 @@ export class BudgetService {
   constructor(private httpClient: HttpClient) { }
 
 
-  getData(){
-    console.log(this.httpClient.get(`${this.url}`));
-    
+  getData(){ 
     return this.httpClient.get(`${this.url}`);
   }
 

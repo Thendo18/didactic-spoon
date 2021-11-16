@@ -14,12 +14,16 @@ export class SavingsComponent implements OnInit {
   constructor(private budgetService:BudgetService) { }
 
   ngOnInit(): void {
-    this.budgetService.getData().subscribe((req)=>
-    {
-this.details=req;
+   
+      this.getBudget();
+  }
 
-
+  getBudget(){
+    this.budgetService.getData().subscribe( (budget:any)  =>{
+        this.details = budget
+        console.log(this.details);
     })
+
   }
 
 }
