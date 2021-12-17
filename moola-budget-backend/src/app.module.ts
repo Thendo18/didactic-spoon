@@ -5,7 +5,7 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { BudgetModule } from './budget/budget.module';
 
 @Module({
-  imports: [ BudgetModule, MongooseModule.forRoot('mongodb://localhost:27017/?readPreference=primary&appname=MongoDB%20Compass&directConnection=true&ssl=false')],
+  imports: [ BudgetModule, MongooseModule.forRoot('mongodb+srv://Thendo:<24681012>@cluster0.5rkio.mongodb.net/test')],
   controllers: [AppController],
   providers: [AppService],
 })
