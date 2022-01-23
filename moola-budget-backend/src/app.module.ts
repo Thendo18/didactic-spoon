@@ -5,7 +5,7 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { BudgetModule } from './budget/budget.module';
 
 @Module({
-  imports: [ BudgetModule, MongooseModule.forRoot('mongodb+srv://Thendo:24681012@cluster0.5rkio.mongodb.net/myFirstDatabase?authSource=admin&replicaSet=atlas-wq1a89-shard-0&w=majority&readPreference=primary&appname=MongoDB%20Compass&retryWrites=true&ssl=true')],
+  imports: [ BudgetModule, MongooseModule.forRoot('mongodb+srv://Thendo:password@cluster0.5rkio.mongodb.net/myFirstDatabase?authSource=admin&replicaSet=atlas-wq1a89-shard-0&w=majority&readPreference=primary&appname=MongoDB%20Compass&retryWrites=true&ssl=true')],
   controllers: [AppController],
   providers: [AppService],
 })
